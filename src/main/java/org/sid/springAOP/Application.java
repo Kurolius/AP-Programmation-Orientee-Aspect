@@ -9,7 +9,7 @@ import org.sid.springAOP.service.Imetier;
 @ComponentScan(basePackages = {"org.sid.springAOP"})
 public class Application {
     public static void main(String[] args) {
-        SecurityContext.authenticate("root","1234",new String[]{"USER"});
+        SecurityContext.authenticate("root","1234",new String[]{"ADMIN"});
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(Application.class);
         Imetier imetier = applicationContext.getBean(Imetier.class);
         imetier.process();

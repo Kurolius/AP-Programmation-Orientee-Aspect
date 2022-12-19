@@ -11,7 +11,7 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class PatchAspect {
 
-    @Pointcut("execution(* metier.IMetierBanqueImpl.retirer(..))")
+    @Pointcut("execution(* org.sid.metier.IMetierBanqueImpl.retirer(..))")
     public void pc1(){}
 
     @Around("pc1() &&args(code,mt)")

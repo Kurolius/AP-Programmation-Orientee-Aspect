@@ -22,7 +22,7 @@ public class LoggingAspect {
     }
 
 
-    @Pointcut("execution(* metier.IMetierBanqueImpl.*(..))")
+    @Pointcut("execution(* org.sid.metier.IMetierBanqueImpl.*(..))")
     public void pc1(){}
 
     @Before("pc1()")

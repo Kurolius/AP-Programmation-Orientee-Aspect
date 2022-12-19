@@ -1,18 +1,18 @@
 package org.sid.aspects;
 
 public aspect FirstAspect {
-    pointcut pc1(): execution(* test.Application.main(..));
+    pointcut pc1(): execution(* org.sid.test.Application.main(..));
 
-//    before():pc1(){
-//        System.out.println("----------------------------------------------------------------");
-//        System.out.println("before Main from FirstAspect");
-//        System.out.println("----------------------------------------------------------------");
-//    }
-//    after():pc1(){
-//        System.out.println("----------------------------------------------------------------");
-//        System.out.println("after Main from FirstAspect");
-//        System.out.println("----------------------------------------------------------------");
-//    }
+    before():pc1(){
+        System.out.println("----------------------------------------------------------------");
+        System.out.println("before Main from FirstAspect");
+        System.out.println("----------------------------------------------------------------");
+    }
+    after():pc1(){
+        System.out.println("----------------------------------------------------------------");
+        System.out.println("after Main from FirstAspect");
+        System.out.println("----------------------------------------------------------------");
+    }
     void around():pc1(){
         System.out.println("----------------------------------------------------------------");
         System.out.println("before Main from FirstAspect");

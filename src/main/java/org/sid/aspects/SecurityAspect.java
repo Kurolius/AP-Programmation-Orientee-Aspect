@@ -13,7 +13,7 @@ public class SecurityAspect {
     private String username="root";
     private String password="1234";
 
-    @Pointcut("execution(* test.Application.start(..))")
+    @Pointcut("execution(* org.sid.test.Application.start(..))")
     public void pc1(){}
 
     @Around("pc1()")
